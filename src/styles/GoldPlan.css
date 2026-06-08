@@ -1,0 +1,77 @@
+.gold-container {
+
+    width: 500px;
+
+    margin: 80px auto;
+
+    padding: 30px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+    background-color: white;
+
+    text-align: center;
+
+}
+
+.gold-container h1 {
+
+    margin-bottom: 20px;
+
+    color: black;
+
+}
+
+.gold-container h2 {
+
+    margin-bottom: 20px;
+
+    font-size: 36px;
+
+}
+
+.gold-container ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin-bottom: 25px;
+
+}
+
+.gold-container ul li {
+
+    margin-bottom: 12px;
+
+    font-size: 18px;
+
+}
+
+.gold-container button {
+
+    padding: 12px 25px;
+
+    background-color: black;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+.gold-container button:hover {
+
+    background-color: #333;
+
+}

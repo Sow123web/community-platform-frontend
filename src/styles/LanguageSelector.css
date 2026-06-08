@@ -1,0 +1,57 @@
+.language-container {
+
+    width: 500px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+    text-align: center;
+
+    margin-top: 50px;
+
+}
+
+.language-container select {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 20px;
+
+    border-radius: 5px;
+
+    border: 1px solid gray;
+
+}
+
+.language-container button {
+
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    background-color: black;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.otp-box {
+
+    margin-top: 20px;
+
+}
