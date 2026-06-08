@@ -28,7 +28,7 @@ const t = {
 
             const response = await axios.get(
 
-                "http://localhost:3000/api/posts/all-posts"
+                "https://community-platform-backend-xdo1.onrender.com/api/posts/all-posts"
 
             )
 
@@ -50,7 +50,7 @@ const t = {
 
         await axios.put(
 
-            `http://localhost:3000/api/posts/like-post/${postId}`
+            `https://community-platform-backend-xdo1.onrender.com/api/posts/like-post/${postId}`
 
         )
 
@@ -72,7 +72,7 @@ const t = {
 
         await axios.put(
 
-            `http://localhost:3000/api/posts/comment-post/${postId}`,
+            `https://community-platform-backend-xdo1.onrender.com/api/posts/comment-post/${postId}`,
 
             {
 
@@ -112,7 +112,7 @@ const t = {
         const response =
         await axios.put(
 
-            `http://localhost:3000/api/posts/share-post/${postId}`,
+            `https://community-platform-backend-xdo1.onrender.com/api/posts/share-post/${postId}`,
 
             {
 
@@ -166,7 +166,7 @@ const t = {
             const response =
             await axios.get(
 
-                "http://localhost:3000/api/users/profile",
+                "https://community-platform-backend-xdo1.onrender.com/api/users/profile",
 
                 {
 

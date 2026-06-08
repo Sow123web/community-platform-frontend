@@ -24,7 +24,7 @@ function Register() {
 
         const response = await axios.post(
 
-            "http://localhost:3000/api/users/register",
+            "https://community-platform-backend-xdo1.onrender.com/api/users/register",
 
             {
 

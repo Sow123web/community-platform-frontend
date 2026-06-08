@@ -26,7 +26,7 @@ function ResetPassword() {
 
         const response = await axios.put(
 
-            "http://localhost:3000/api/users/update-password",
+            "https://community-platform-backend-xdo1.onrender.com/api/users/update-password",
 
             {
 

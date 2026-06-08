@@ -32,7 +32,7 @@ localStorage.getItem("token")
 
 await axios.put(
 
-    "http://localhost:3000/api/users/change-language",
+    "https://community-platform-backend-xdo1.onrender.com/api/users/change-language",
 
     {
 
@@ -66,7 +66,7 @@ await axios.put(
     const response =
     await axios.put(
 
-        "http://localhost:3000/api/users/change-language",
+        "https://community-platform-backend-xdo1.onrender.com/api/users/change-language",
 
         {
 
@@ -112,7 +112,7 @@ await axios.put(
         const response =
         await axios.put(
 
-            "http://localhost:3000/api/users/verify-french-otp",
+            "https://community-platform-backend-xdo1.onrender.com/api/users/verify-french-otp",
 
             {
 
@@ -160,7 +160,7 @@ useEffect(() => {
             const response =
             await axios.get(
 
-                "http://localhost:3000/api/users/profile",
+                "https://community-platform-backend-xdo1.onrender.com/api/users/profile",
 
                 {
 

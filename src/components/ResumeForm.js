@@ -48,7 +48,7 @@ function ResumeForm() {
         const response =
         await axios.post(
 
-            "http://localhost:3000/api/subscriptions/create-resume",
+            "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/create-resume",
 
             {
 
@@ -108,7 +108,7 @@ function ResumeForm() {
         const response =
         await axios.post(
 
-            "http://localhost:3000/api/subscriptions/send-otp",
+            "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/send-otp",
 
             {
 
@@ -142,7 +142,7 @@ const handleVerifyOtp = async () => {
         const response =
         await axios.post(
 
-            "http://localhost:3000/api/subscriptions/verify-otp",
+            "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/verify-otp",
 
             {
 
@@ -182,7 +182,7 @@ const handleResumePayment = async () => {
         const orderResponse =
         await axios.post(
 
-            "http://localhost:3000/api/subscriptions/create-order",
+            "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/create-order",
 
             {
 
@@ -197,7 +197,7 @@ const handleResumePayment = async () => {
         const keyResponse =
         await axios.get(
 
-            "http://localhost:3000/api/subscriptions/key"
+            "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/key"
 
         )
 
@@ -221,7 +221,7 @@ const handleResumePayment = async () => {
                 const response =
                 await axios.put(
 
-                    "http://localhost:3000/api/subscriptions/resume-payment",
+                    "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/resume-payment",
 
                     {
 
@@ -275,7 +275,7 @@ useEffect(() => {
             const response =
             await axios.get(
 
-                "http://localhost:3000/api/users/profile",
+                "https://community-platform-backend-xdo1.onrender.com/api/users/profile",
 
                 {
 

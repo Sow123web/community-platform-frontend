@@ -81,7 +81,7 @@ const t = {
 
         await axios.post(
 
-            "http://localhost:3000/api/posts/create-post",
+            "https://community-platform-backend-xdo1.onrender.com/api/posts/create-post",
 
             formData,
 
@@ -133,7 +133,7 @@ useEffect(() => {
             const response =
             await axios.get(
 
-                "http://localhost:3000/api/users/profile",
+                "https://community-platform-backend-xdo1.onrender.com/api/users/profile",
 
                 {
 

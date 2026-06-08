@@ -27,7 +27,7 @@ useState(null)
             const result = parser.getResult()
             const response = await axios.post(
 
-                "http://localhost:3000/api/users/login",
+                "https://community-platform-backend-xdo1.onrender.com/api/users/login",
 
                 {
 
@@ -121,7 +121,7 @@ async () => {
         const response =
         await axios.post(
 
-            "http://localhost:3000/api/users/verify-login-otp",
+            "https://community-platform-backend-xdo1.onrender.com/api/users/verify-login-otp",
 
             {
 

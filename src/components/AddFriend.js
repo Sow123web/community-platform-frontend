@@ -31,7 +31,7 @@ useEffect(() => {
             const response =
             await axios.get(
 
-                "http://localhost:3000/api/users/profile",
+                "https://community-platform-backend-xdo1.onrender.com/api/users/profile",
 
                 {
 
@@ -78,7 +78,7 @@ useEffect(() => {
             const response =
             await axios.put(
 
-                "http://localhost:3000/api/users/add-friend",
+                "https://community-platform-backend-xdo1.onrender.com/api/users/add-friend",
 
                 {
 

@@ -15,7 +15,7 @@ function BronzePlan() {
             const orderResponse =
             await axios.post(
 
-                "http://localhost:3000/api/subscriptions/create-order",
+                "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/create-order",
 
                 {
 
@@ -32,7 +32,7 @@ function BronzePlan() {
             const keyResponse =
             await axios.get(
 
-                "http://localhost:3000/api/subscriptions/key"
+                "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/key"
 
             )
 
@@ -56,7 +56,7 @@ function BronzePlan() {
                     const response =
                     await axios.put(
 
-                        "http://localhost:3000/api/subscriptions/buy-plan",
+                        "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/buy-plan",
 
                         {
 
