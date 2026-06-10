@@ -20,12 +20,6 @@ function FreePlan() {
 
             <h3>₹0</h3>
 
-            <p>
-
-                1 Internship per Month
-
-            </p>
-
             <ul>
 
                 <li>Community Access</li>
