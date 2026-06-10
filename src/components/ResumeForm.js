@@ -26,6 +26,10 @@ function ResumeForm() {
 
     const [resumePreview, setResumePreview] = useState(null)
 
+    const [plan, setPlan] = useState("")
+
+    const [loading, setLoading] = useState(true)
+
     const [language, setLanguage] = useState("English")
 
     const t = {
@@ -297,6 +301,8 @@ useEffect(() => {
 
             )
 
+            setPlan(response.data.plan)
+
             setLanguage(
     response.data.language || "English"
 )
@@ -322,11 +328,14 @@ useEffect(() => {
 
             }
 
+            setLoading(false)
+
         }
 
         catch(error) {
 
             console.log(error)
+            setLoading(false)
 
         }
 
@@ -335,6 +344,43 @@ useEffect(() => {
     checkResumeAccess()
 
 }, [])
+
+    if(loading) {
+
+    return <p>Loading...</p>
+
+}
+
+    const isPremium =
+    plan === "Bronze" ||
+    plan === "Silver" ||
+    plan === "Gold"
+
+    if(!isPremium) {
+
+    return (
+
+        <div className="resume-container">
+
+            <h1>{t.resumeTitle}</h1>
+
+            <p
+                style={{
+                    textAlign: "center",
+                    fontWeight: "bold",
+                    color: "red"
+                }}
+            >
+
+                Resume feature available only for premium users
+
+            </p>
+
+        </div>
+
+    )
+
+}
 
     return (
 

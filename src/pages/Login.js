@@ -107,9 +107,21 @@ else {
 
         catch(error) {
 
-            alert(error.response.data.message)
+    console.log(error)
 
-        }
+    if(error.response) {
+
+        alert(error.response.data.message)
+
+    }
+
+    else {
+
+        alert(error.message)
+
+    }
+
+}
 
     }
 
@@ -172,13 +184,21 @@ async () => {
 
     catch(error) {
 
-        alert(
+    console.log(error)
 
-            error.response.data.message
+    if(error.response) {
 
-        )
+        alert(error.response.data.message)
 
     }
+
+    else {
+
+        alert(error.message)
+
+    }
+
+}
 
 }
 
@@ -287,3 +307,6 @@ showOtpBox && (
 }
 
 export default Login
+
+
+
