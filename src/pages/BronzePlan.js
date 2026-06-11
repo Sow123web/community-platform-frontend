@@ -19,15 +19,15 @@ new Date(
 
 const hour = indianTime.getHours()
 
-if(false) {
+// if(hour < 10 || hour >= 11) {
 
-    alert(
-        "Payments allowed only between 10 AM and 11 AM IST"
-    )
+//     alert(
+//         "Payments allowed only between 10 AM and 11 AM IST"
+//     )
 
-    return
+//     return
 
-}
+// }
 
         try {
 
@@ -77,26 +77,54 @@ if(false) {
 
                 handler: async function() {
 
-                    const response =
-                    await axios.put(
+    try {
 
-                        "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/buy-plan",
+        console.log("Payment Success")
 
-                        {
+        const response =
+        await axios.put(
 
-                            userId,
+            "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/buy-plan",
 
-                            plan: "Bronze"
+            {
 
-                        }
+                userId,
 
-                    )
+                plan: "Bronze"
 
-                    alert(
-                        response.data.message
-                    )
+            }
 
-                },
+        )
+
+        console.log(
+            "BUY PLAN RESPONSE:",
+            response.data
+        )
+
+        alert(
+            response.data.message
+        )
+
+    }
+
+    catch(error) {
+
+        console.log(
+            "BUY PLAN ERROR:",
+            error
+        )
+
+        alert(
+
+            error.response?.data?.message ||
+
+            error.message
+
+        )
+
+    }
+
+},
 
                 theme: {
 
