@@ -19,15 +19,15 @@ new Date(
 
 const hour = indianTime.getHours()
 
-// if(hour < 10 || hour >= 11) {
+if(hour < 10 || hour >= 11) {
 
-//     alert(
-//         "Payments allowed only between 10 AM and 11 AM IST"
-//     )
+    alert(
+        "Payments allowed only between 10 AM and 11 AM IST"
+    )
 
-//     return
+    return
 
-// }
+}
 
         try {
 
