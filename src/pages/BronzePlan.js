@@ -5,29 +5,29 @@ function BronzePlan() {
 
     const handleActivateBronze = async () => {
 
-        const now = new Date()
+//         const now = new Date()
 
-const indianTime =
-new Date(
-    now.toLocaleString(
-        "en-US",
-        {
-            timeZone: "Asia/Kolkata"
-        }
-    )
-)
-
-const hour = indianTime.getHours()
-
-// if(hour < 10 || hour >= 11) {
-
-//     alert(
-//         "Payments allowed only between 10 AM and 11 AM IST"
+// const indianTime =
+// new Date(
+//     now.toLocaleString(
+//         "en-US",
+//         {
+//             timeZone: "Asia/Kolkata"
+//         }
 //     )
+// )
 
-//     return
+// const hour = indianTime.getHours()
 
-// }
+// // if(hour < 10 || hour >= 11) {
+
+// //     alert(
+// //         "Payments allowed only between 10 AM and 11 AM IST"
+// //     )
+
+// //     return
+
+// // }
 
         try {
 
