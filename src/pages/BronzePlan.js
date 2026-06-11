@@ -75,13 +75,15 @@ const hour = indianTime.getHours()
 
                 order_id: data.id,
 
-                handler: async function() {
+                handler: async function(response) {
+
+    alert("Razorpay Success");
+
+    console.log("RAZORPAY RESPONSE:", response);
 
     try {
 
-        console.log("Payment Success")
-
-        const response =
+        const buyPlanResponse =
         await axios.put(
 
             "https://community-platform-backend-xdo1.onrender.com/api/subscriptions/buy-plan",
@@ -98,11 +100,11 @@ const hour = indianTime.getHours()
 
         console.log(
             "BUY PLAN RESPONSE:",
-            response.data
+            buyPlanResponse.data
         )
 
         alert(
-            response.data.message
+            buyPlanResponse.data.message
         )
 
     }
@@ -111,15 +113,12 @@ const hour = indianTime.getHours()
 
         console.log(
             "BUY PLAN ERROR:",
-            error
+            error.response?.data || error
         )
 
         alert(
-
             error.response?.data?.message ||
-
             error.message
-
         )
 
     }
