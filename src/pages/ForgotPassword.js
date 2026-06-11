@@ -31,9 +31,21 @@ function ForgotPassword() {
 
         catch(error) {
 
-            console.log(error)
+    if(error.response) {
 
-        }
+        alert(error.response.data.message)
+
+    }
+
+    else {
+
+        alert("Something went wrong")
+
+    }
+
+    console.log(error)
+
+}
 
     }
 
