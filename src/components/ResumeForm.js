@@ -109,6 +109,9 @@ function ResumeForm() {
         const userId =
         localStorage.getItem("userId")
 
+        console.log("SEND OTP BUTTON CLICKED")
+console.log("USER ID:", userId)
+
         const response =
         await axios.post(
 
@@ -122,15 +125,24 @@ function ResumeForm() {
 
         )
 
+        console.log("SEND OTP RESPONSE:", response.data)
+
         alert(response.data.message)
 
     }
 
     catch(error) {
 
+        console.log("SEND OTP ERROR:", error)
+console.log(
+    "SEND OTP ERROR RESPONSE:",
+    error.response?.data
+)
+
         alert(
-            error.response.data.message
-        )
+    error.response?.data?.message ||
+    error.message
+)
 
     }
 
