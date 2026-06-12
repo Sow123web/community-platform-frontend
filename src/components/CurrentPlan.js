@@ -45,6 +45,8 @@ const t = {
 
                 )
 
+                console.log(response.data)
+
                 setPlan(
                     response.data.plan
                 )
@@ -114,7 +116,7 @@ const t = {
 
             <h1>{t.currentPlan}</h1>
 
-            <h2>{t.explorePlans}</h2>
+            <h2>{plan}</h2>
 
             <h3>
 
