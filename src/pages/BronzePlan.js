@@ -5,28 +5,28 @@ function BronzePlan() {
 
     const handleActivateBronze = async () => {
 
-        const now = new Date()
+//         const now = new Date()
 
-const indianTime =
-new Date(
-    now.toLocaleString(
-        "en-US",
-        {
-            timeZone: "Asia/Kolkata"
-        }
-    )
-)
+// const indianTime =
+// new Date(
+//     now.toLocaleString(
+//         "en-US",
+//         {
+//             timeZone: "Asia/Kolkata"
+//         }
+//     )
+// )
 
-const hour = indianTime.getHours()
+// const hour = indianTime.getHours()
 
-if(hour < 10 || hour >= 11) {
+// if(hour < 10 || hour >= 11) {
 
-    alert(
-        "Payments allowed only between 10 AM and 11 AM IST"
-    )
-    return
+//     alert(
+//         "Payments allowed only between 10 AM and 11 AM IST"
+//     )
+//     return
 
-}
+// }
 
         try {
 
@@ -102,9 +102,15 @@ if(hour < 10 || hour >= 11) {
             buyPlanResponse.data
         )
 
-        alert(
-            buyPlanResponse.data.message
-        )
+        console.log(
+    "BUY PLAN RESPONSE:",
+    buyPlanResponse.data
+)
+
+alert(
+    buyPlanResponse.data.message ||
+    "Plan Purchased Successfully"
+)
 
     }
 
