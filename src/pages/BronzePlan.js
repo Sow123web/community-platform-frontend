@@ -1,5 +1,5 @@
 import axios from "axios"
-import "../styles/BronzePlan.css" 
+import "../styles/BronzePlan.css"
 
 function BronzePlan() {
 
